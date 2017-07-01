@@ -8,10 +8,8 @@
 # What is the largest prime factor of the number `600851475143`?
 #
 
-from primetools import factorize
-
 def main(lib):
-    return max(factorize(600851475143))
+    return max(lib.primetools.factorize(600851475143))
 
 if __name__ == '__main__':
     print(main())

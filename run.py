@@ -9,6 +9,8 @@
 from importlib import import_module
 from sys import argv
 
+import library
+
 def load_problem(num):
     name = 'problems.p{}.main'
     numname = str(num)
@@ -25,7 +27,7 @@ def main(args):
         print('The first argument should be the number of the problem you '
                 + 'wish to run!')
     problem = load_problem(problemn)
-    print(problem.main(None))
+    print(problem.main(library))
 
 if __name__ == '__main__':
     main(argv)
