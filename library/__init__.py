@@ -2,4 +2,4 @@
 # Library Initialization
 #
 
-import .primetools
+from . import primetools
