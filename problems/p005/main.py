@@ -12,12 +12,11 @@
 
 from functools import reduce
 
+from multiset import Multiset
+
 def main(lib):
-    primes = lib.primetools.primes
-    number = 1
-    for prime in primes():
-        print(prime)
-        if prime > 10:
-            break
-        number *= prime
-    return number
+    factorize = lib.primetools.factorize
+    ms = Multiset([])
+    for i in range(2, 21):
+        ms |= Multiset(factorize(i))
+    return reduce((lambda x,y: x*y), list(ms))
