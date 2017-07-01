@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-
-from itertools import count
+# Fibonacci sequence
+#
 
 def fib(n):
     if n in [0, 1]:

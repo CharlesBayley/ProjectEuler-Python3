@@ -10,6 +10,3 @@
 
 def main(lib):
     return max(lib.primetools.factorize(600851475143))
-
-if __name__ == '__main__':
-    print(main())

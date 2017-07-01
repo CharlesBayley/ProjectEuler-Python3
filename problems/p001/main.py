@@ -15,6 +15,3 @@ def main(lib):
         if any([i % 3 == 0, i % 5 == 0]):
             rsum += i
     return rsum
-
-if __name__ == '__main__':
-    print(main())
