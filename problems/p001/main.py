@@ -10,11 +10,11 @@
 #
 
 def main():
-    sum = 0
+    rsum = 0
     for i in range(1000):
         if any([i % 3 == 0, i % 5 == 0]):
-            sum += i
-    return sum
+            rsum += i
+    return rsum
 
 if __name__ == '__main__':
     print(main())

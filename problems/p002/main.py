@@ -20,14 +20,14 @@ def fib(n):
     return fib(n - 1) + fib(n - 2)
 
 def main():
-    sum = 0
+    rsum = 0
     for i in count(0):
         fibn = fib(i)
         if fibn > 4000000:
             break
         elif fibn % 2 == 0:
-            sum += fibn
-    return sum
+            rsum += fibn
+    return rsum
 
 if __name__ == '__main__':
     print(main())
