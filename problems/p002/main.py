@@ -19,7 +19,7 @@ def fib(n):
         return n
     return fib(n - 1) + fib(n - 2)
 
-def main():
+def main(lib):
     rsum = 0
     for i in count(0):
         fibn = fib(i)

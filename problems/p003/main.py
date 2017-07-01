@@ -10,7 +10,7 @@
 
 from primetools import factorize
 
-def main():
+def main(lib):
     return max(factorize(600851475143))
 
 if __name__ == '__main__':
