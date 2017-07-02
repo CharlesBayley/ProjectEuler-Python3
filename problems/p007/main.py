@@ -10,4 +10,7 @@
 #
 
 def main(lib):
-    return 0
+    primes = lib.primetools.primes()
+    for _ in range(10000):
+        next(primes)
+    return next(primes)
