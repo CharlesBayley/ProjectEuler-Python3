@@ -3,6 +3,10 @@
 #
 
 def fib(n):
-    if n in [0, 1]:
-        return n
-    return fib(n - 1) + fib(n - 2)
+    p1 = 0
+    p2 = 1
+    next = p1
+    for i in range(n):
+        next = p1 + p2
+        p1, p2 = p2, next
+    return next
